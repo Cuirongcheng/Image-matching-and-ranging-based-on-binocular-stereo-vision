@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>img/background.jpg</file>
+    <file>img/幻灯片1.JPG</file>
+    <file>img/幻灯片2.JPG</file>
+    <file>img/幻灯片3.JPG</file>
+    <file>img/幻灯片4.JPG</file>
+    <file>img/btnbg.png</file>
+    <file>img/bg1.JPG</file>
+    <file>img/bg2.JPG</file>
+    <file>img/bg3.JPG</file>
+    <file>img/bg4.JPG</file>
+  </qresource>
+</RCC>

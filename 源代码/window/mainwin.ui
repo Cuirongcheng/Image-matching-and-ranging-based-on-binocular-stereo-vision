@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图像匹配与测距演示系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnImage">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>420</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:0px;</string>
+    </property>
+    <property name="text">
+     <string>图像采集</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMatch">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>420</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:0px;</string>
+    </property>
+    <property name="text">
+     <string>图像匹配</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCount">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>420</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:0px;</string>
+    </property>
+    <property name="text">
+     <string>距离测量</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/newPrefix/img/幻灯片1.JPG);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>btnImage</zorder>
+   <zorder>btnMatch</zorder>
+   <zorder>btnCount</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

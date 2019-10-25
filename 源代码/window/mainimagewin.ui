@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图像采集</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="btnCloseCam">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>关闭相机</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveImage">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>70</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>保存图像</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>135</y>
+     <width>325</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px;
+border-style:dotted;
+border-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>左图像区域</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOpenCam">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>启动相机</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/newPrefix/img/background.jpg);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnStopGrab">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>70</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>停止采集</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RLabel">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>135</y>
+     <width>325</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px;
+border-style:dotted;
+border-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>右图像区域</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ResultLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>485</y>
+     <width>660</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;汉仪喵魂体W&quot;;
+color: rgb(0, 0, 0);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>结果显示区域</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnStartGrab">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14pt &quot;汉仪喵魂体W&quot;;
+color: rgb(255, 255, 255);
+border:2px solid;
+border-color: rgb(255, 255, 255);
+background-color: rgb(242, 216, 121);</string>
+   </property>
+   <property name="text">
+    <string>采集图像</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>btnCloseCam</zorder>
+  <zorder>btnSaveImage</zorder>
+  <zorder>LLabel</zorder>
+  <zorder>btnOpenCam</zorder>
+  <zorder>btnStopGrab</zorder>
+  <zorder>RLabel</zorder>
+  <zorder>ResultLabel</zorder>
+  <zorder>btnStartGrab</zorder>
+ </widget>
+ <resources>
+  <include location="../img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

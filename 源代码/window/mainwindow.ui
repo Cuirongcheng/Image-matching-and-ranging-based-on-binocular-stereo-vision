@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="CamsgroupBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>721</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>双相机操作</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>10</y>
+       <width>721</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnOpen">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>启动相机</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStart">
+        <property name="text">
+         <string>采集图像</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSet">
+        <property name="text">
+         <string>双目标定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMatch">
+        <property name="text">
+         <string>立体匹配</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTest">
+        <property name="text">
+         <string>双目测距</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClose">
+        <property name="text">
+         <string>关闭相机</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnHelp">
+        <property name="text">
+         <string>帮助文档</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="TitleLable">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>双目测量测试开发平台</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="RCamgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>120</y>
+      <width>101</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>右相机操作</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>91</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="btnRCam">
+        <property name="text">
+         <string>相机操作</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRImage">
+        <property name="text">
+         <string>图像处理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRState">
+        <property name="text">
+         <string>特征监测</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRSet">
+        <property name="text">
+         <string>相机标定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRMatch">
+        <property name="text">
+         <string>算法匹配</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRTest">
+        <property name="text">
+         <string>单目测距</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="LCamgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>101</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>左相机操作</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>91</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btnLCam">
+        <property name="text">
+         <string>相机操作</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLImage">
+        <property name="text">
+         <string>图像处理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLState">
+        <property name="text">
+         <string>特征监测</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLSet">
+        <property name="text">
+         <string>相机标定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLMatch">
+        <property name="text">
+         <string>算法匹配</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLTest">
+        <property name="text">
+         <string>单目测距</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="StategroupBox">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>410</y>
+      <width>501</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>检测结果及操作步骤</string>
+    </property>
+    <widget class="QLabel" name="ResultLlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>结果显示</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="LImageLable">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>130</y>
+      <width>251</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(190, 190, 190);</string>
+    </property>
+    <property name="text">
+     <string>左图像区域</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RImageLable">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>130</y>
+      <width>251</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(190, 190, 190);</string>
+    </property>
+    <property name="text">
+     <string>右图像区域</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>743</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>相机操作</string>
+    </property>
+    <addaction name="actionqidongxiangji"/>
+    <addaction name="actionCloseCamera"/>
+    <addaction name="actionTestCamera"/>
+    <addaction name="actionAboutCamera"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>图像操作</string>
+    </property>
+    <addaction name="actionOpenImage"/>
+    <addaction name="actionEditImage"/>
+    <addaction name="actionSaveImage"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>编辑处理</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>算法匹配</string>
+    </property>
+    <addaction name="actionSIFT"/>
+    <addaction name="actionSURF"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>立体测距</string>
+    </property>
+    <addaction name="actionCount"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionqidongxiangji">
+   <property name="text">
+    <string>OpenCamera</string>
+   </property>
+  </action>
+  <action name="actionCloseCamera">
+   <property name="text">
+    <string>CloseCamera</string>
+   </property>
+  </action>
+  <action name="actionTestCamera">
+   <property name="text">
+    <string>TestCamera</string>
+   </property>
+  </action>
+  <action name="actionAboutCamera">
+   <property name="text">
+    <string>AboutCamera</string>
+   </property>
+  </action>
+  <action name="actionOpenImage">
+   <property name="text">
+    <string>OpenImage</string>
+   </property>
+  </action>
+  <action name="actionEditImage">
+   <property name="text">
+    <string>EditImage</string>
+   </property>
+  </action>
+  <action name="actionSaveImage">
+   <property name="text">
+    <string>SaveImage</string>
+   </property>
+  </action>
+  <action name="actionSIFT">
+   <property name="text">
+    <string>SIFT</string>
+   </property>
+  </action>
+  <action name="actionSURF">
+   <property name="text">
+    <string>SURF</string>
+   </property>
+  </action>
+  <action name="actionCount">
+   <property name="text">
+    <string>Count</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
